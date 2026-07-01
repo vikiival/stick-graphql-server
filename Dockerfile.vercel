@@ -5,4 +5,4 @@ RUN npm i -g squid-graphql-server
 # COPY server.ts .
 
 # srvx listens on $PORT by default
-CMD ["squid-graphql-server", "--subscriptions", "--max-response-size 10000", "--dumb-cache in-memory", "--dumb-cache-ttl 1000", "--dumb-cache-size 100", "--dumb-cache-max-age 1000"]
+CMD ["npx", "squid-graphql-server", "--subscriptions", "--max-response-size 10000", "--dumb-cache in-memory", "--dumb-cache-ttl 1000", "--dumb-cache-size 100", "--dumb-cache-max-age 1000"]
